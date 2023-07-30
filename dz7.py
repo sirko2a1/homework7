@@ -1,13 +1,14 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='clean_folder',
     version='0.1',
-    packages=find_packages(),
-    install_requires=[],
+    description='A Python package to sort files in a folder',
+    author='I am',
+    install_requires=['some dependencies'],
     entry_points={
         'console_scripts': [
-            'clean-folder = clean_folder.clean:main'
+            'clean-folder = clean_folder.clean_folder.clean:main'
         ]
     }
 )
